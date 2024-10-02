@@ -1,0 +1,40 @@
+Funcionalidades:
+
+    Conversão de Texto para Morse: Converte texto comum em código Morse.
+    Conversão de Morse para Texto: Decodifica código Morse de volta para texto.
+    Inserção Dinâmica: Insere novos mapeamentos de código Morse.
+    Percurso da Árvore: Exibe a árvore de código Morse em diferentes ordens (In-Order, Pre-Order, Post-Order).
+
+Classes Principais:
+
+    Utils: Utilitários para conversão de texto em código Morse.
+
+    UseMode: Enum para definir modos de operação:
+        Ex: TEXT_TO_TEXT , MORSE_TO_TEXT , INSERT
+
+    Order: Enum para definir as ordens de percurso da árvore:
+        Ex: IN_ORDER , PRE_ORDER , POS_ORDER
+
+    Node: Representa um nó na árvore binária.
+
+    BinaryTree: Gerencia a árvore de código Morse, permitindo inserções e impressões.
+
+    Main: Ponto de entrada do aplicativo, processa argumentos da linha de comando.
+
+Exemplos de Uso
+
+    Caso 1)
+        Code: java Main 1 "SOS"
+        Explanation: Converte o texto para o morse, e então coleta ele da arvore, e retorna junto com o morse gerado
+
+    Caso 2)
+        Code: java Main 2 '...' '___' '...'
+        Explanation: Coleta o texto do morse a partir da arvore e o retorna
+
+    Caso 3)
+        Code: java Main 3 '...___...' 'SOS'
+        Explanation: Insere o novo character ou modifica ele caso o codigo morse seja repetido, então coleta o character da arvore e o retorna
+
+    Caso 4)
+        Code: java Main
+        Explanation: Printa uma mensagem pre setada coletada da arvore
