@@ -1,9 +1,4 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class Main {
-
-    private static final ExecutorService executorService = Executors.newFixedThreadPool(10);
 
     public static void main(String[] args) {
 
@@ -29,7 +24,7 @@ public class Main {
 
                     for (Registro[] registro : registros) {
 
-                        executorService.execute(() -> HashTable.test(tabela, registro, tipoHash, i));
+                        HashTable.test(tabela, registro, tipoHash, i);
 
                     }
 

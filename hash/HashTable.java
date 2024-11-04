@@ -90,9 +90,9 @@ public class HashTable {
         }
 
         long searchTime = System.currentTimeMillis() - startTime;
-        String logFilePath = "/home/bruno/Documents/Aula/estrutura/hash/final_logs_2.txt";
+        String logFilePath = "/home/bruno/Documents/Aula/estrutura/hash/final_logs.txt";
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true))) { // 'true' to append to the file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true))) { 
             writer.write("@=========================@\n");
             writer.write("| Run: " + run);
             writer.write("| Hash Type: " + hashType + "\n");
