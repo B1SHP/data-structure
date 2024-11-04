@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("Starting the actual algorithim");
 
-        for(int i : new int[]{1, 2, 3, 4}) {
+        for(int i : new int[]{0, 1, 2, 3, 4}) {
 
             for (int tamanho : tableSizes) {
 
